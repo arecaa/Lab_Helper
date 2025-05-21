@@ -59,8 +59,8 @@ elif menu == "희석 계산기":
     st.title("🧬 플라스미드 희석 계산기")
 
     
-    c1 = st.number_input("📈 현재 농도 (µg/µL)", min_value=0.1, value=500.0, step=1.0)
-    c2 = st.number_input("🎯 목표 농도 (µg/µL)", min_value=0.1, value=100.0, step=1.0)
+    c1 = st.number_input("📈 현재 농도 (ng/µL)", min_value=0.1, value=500.0, step=1.0)
+    c2 = st.number_input("🎯 목표 농도 (ng/µL)", min_value=0.1, value=100.0, step=1.0)
     v2 = st.number_input("📦 최종 부피 (µL)", min_value=1.0, value=10.0, step=1.0)
 
     if st.button("계산하기", key="plasmid_dilution"):
@@ -74,6 +74,6 @@ elif menu == "희석 계산기":
             💧 **결과:**
 
             - 플라스미드: **{v1:.2f} µL**
-            - DW (멸균수): **{dw:.2f} µL**
+            - UPW (멸균수): **{dw:.2f} µL**
             - 최종 총량: **{v1 + dw:.2f} µL**
         """)
