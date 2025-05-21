@@ -9,7 +9,7 @@ menu = st.sidebar.selectbox("기능 선택", ["시딩 계산기", "WB 샘플링 
 # 1. 시딩 계산기
 # ─────────────────────────────
 if menu == "시딩 계산기":
-    st.title("🧫 시딩 계산기")
+    st.title("🌱 시딩 계산기")
 
     def parse_input(value):
         value = value.strip().upper()
@@ -28,7 +28,7 @@ if menu == "시딩 계산기":
             conc = parse_input(cell_conc)
             target = parse_input(target_cells)
             volume_ul = (target / conc) * 1000
-            st.success(f"필요한 시딩 볼륨: **{volume_ul:.2f} µL**")
+            st.success(f"💡 필요한 시딩 볼륨: **{volume_ul:.2f} µL**")
         except:
             st.error("입력을 확인하세요 (예: 1M, 100k 등)")
 
@@ -71,7 +71,7 @@ elif menu == "희석 계산기":
             dw = v2 - v1
 
             st.success(f"""
-            💧 **결과:**
+            💡 **결과:**
 
             - 플라스미드: **{v1:.2f} µL**
             - UPW (멸균수): **{dw:.2f} µL**
