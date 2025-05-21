@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="실험용 계산기", layout="centered")
 
 # 사이드바 메뉴 선택
-menu = st.sidebar.selectbox("기능 선택", ["시딩 계산기", "WB 샘플링 계산기"])
+menu = st.sidebar.selectbox("기능 선택", ["시딩 계산기", "WB 샘플링 계산기", "희석 계산기"])
 
 # ─────────────────────────────
 # 1. 시딩 계산기
